@@ -1,0 +1,107 @@
+@import './variables';
+@import './mixins';
+
+.btn__accent {
+    background: $clr-accent !important;
+    color: $clr-white;
+    padding: 15px 50px !important;
+    font-weight: 500;
+    font-size: 18px !important;
+    line-height: 24px;
+    font-family: 'Hanken Grotesk', sans-serif;
+    border-radius: 999px;
+    &:hover,
+    &:focus {
+        color: $clr-white !important;
+    }
+&.btn__lg {
+    padding: 15px 15px 15px 35px !important;
+    max-width: 358px;
+    text-align: left;
+    border-radius: 999px 0 0 999px;
+    margin-bottom: 50px;
+    @include mq(lg){
+        border-radius: 999px;
+        padding: 15px 35px !important;
+        max-width: 400px;
+    }
+    @include mq(md){
+        padding: 15px 25px !important;
+    }
+    svg {
+        margin-left: 10px;
+        transition: transform .3s ease-in-out;
+    }
+    &:hover,
+    &:focus {
+        svg {
+            transform: translateX(10px);
+        }
+    }
+}
+}
+
+.btn__outline-accent,
+.btn__outline-white
+ {
+    border: 1px solid $clr-accent-dark;
+    border-radius: 999px;
+    padding: 12px 40px;
+    color: $clr-accent-dark;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 15px !important;
+    line-height: 20px;
+    &:hover,
+    &:focus {
+        color: $clr-accent-dark !important;
+        border-color: $clr-accent-dark !important; 
+    }
+}
+.btn__outline-white {
+    border: 1px solid $clr-white;
+    color: $clr-white;
+    &:hover,
+    &:focus {
+        color: $clr-white !important;
+        border-color: $clr-white !important; 
+    }
+}
+
+
+.arrow-link {
+    color: $clr-light;
+    display: flex;
+    align-items: flex-end;
+    gap: 20px;
+    svg {
+      transition: transform .3s ease-in-out;
+    }
+    &:hover,
+    &:focus {
+        color: $clr-light;
+        svg {
+            transform: translateX(10px);
+        }
+    }
+}
+
+.btn__transparent {
+    background: transparent;
+    backdrop-filter: blur(10px);
+    color: $clr-white;
+    border-radius: 999px;
+    border: 1px solid $clr-white;
+    font-size: 15px;
+    line-height: 20px;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 15px !important;
+    line-height: 20px;
+    font-weight: 400;
+    padding: 12px 40px;
+    margin-bottom: 16px;
+    &:hover,
+    &:focus {
+        color: $clr-white !important;
+        border: 1px solid $clr-white !important; 
+    }
+}
